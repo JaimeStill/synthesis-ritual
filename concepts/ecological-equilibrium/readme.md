@@ -1,6 +1,7 @@
 # Ecological Equilibrium
 
 > LLM: Claude 3.7 Sonnet
+> Date: 2025-05-11
 
 Provide a summary in common terms of the research established in this series: https://www.quantamagazine.org/series/science-in-the-age-of-ai/
 

@@ -1,6 +1,7 @@
 # Hybrid SQL / C# Language
 
 > LLM: Claude 3.7 Sonnet
+> Date: 2025-03-20
 
 I would like your assistance creating a hybrid, functional, dynamic SQL-like language that combines with C#. Inspiration for this language is a combination of the following:
 
