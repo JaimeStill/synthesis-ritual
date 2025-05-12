@@ -1,6 +1,6 @@
 # Networked Intelligence and Consciousness Evolution
 
-> LLM: Claude 3.7 Sonnet
+> LLM: Claude 3.7 Sonnet  
 > Date: 2025-05-12
 
 I've been working through the idea of specialized models intended to process certain categories of information, and output responses in the requested format. These specialized models could then be networked together to a central processing model that knows how to process a prompt across each of these specialized nodes while retaining the overall context of the prompt in the generation of the response.

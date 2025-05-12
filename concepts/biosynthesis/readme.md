@@ -1,6 +1,6 @@
 # Biosymbiosis
 
-> LLM: Claude 3.7 Sonnet
+> LLM: Claude 3.7 Sonnet  
 > Date: 2025-04-20
 
 I want to explore the concept of a near future sci-fi, time period story that I have in my mind, and use it to construct parallels to my life, my perception of American values in contrast with how they have been eroded through capitalistic manipulation, and the use of evolving technologies to empower people to correct the issue. If firearms were the great equalizer of the wild west, biosymbiosis will be the great equalizer of the modern world.
