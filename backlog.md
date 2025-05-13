@@ -4,6 +4,4 @@ Take the details from the [llm-chronicle repository](https://github.com/JaimeSti
 
 The following prompts still need to be reviewed for concepts:
 
-- [Nepotism and Capitalistic Corruption in US Defense](https://claude.ai/chat/de097838-b174-4c32-8987-f358385dad71)
-- [Crafting a Professional Paper on Industry Challenges](https://claude.ai/chat/7fdc3847-de62-4f3b-ad28-f58ef964580a)
 - [Seeking Meaning and Authentic Connection](https://claude.ai/chat/e7af943d-1282-4b18-938f-35fe3d57a673)
