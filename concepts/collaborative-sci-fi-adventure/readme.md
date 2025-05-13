@@ -1,5 +1,8 @@
 # Collaborative Sci-Fi Adventure
 
+> LLM: Claude 3.5 Sonnet  
+> Date: 2025-02-15
+
 I would like to share an idea for a sci-fi adventure with you. Based on the synopsis of the story, I would like to periodically ask you to generate short stories or log-style journal entries. Is this something you could assist with?
 
 ## Response

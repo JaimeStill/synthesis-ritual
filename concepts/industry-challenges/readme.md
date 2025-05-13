@@ -1,5 +1,8 @@
 # Industry Challenges
 
+> LLM: Claude 3.7 Sonnet  
+> Date: 2025-05-02
+
 This concept is merged from two separate prompt conversations:
 - Crafting a Professional Paper on Industry Challenges
 - Nepotism and Capitalistic Corruption in US Defense
