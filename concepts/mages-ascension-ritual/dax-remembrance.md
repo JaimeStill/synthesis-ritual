@@ -1,0 +1,9 @@
+# Dax Remembrance
+
+Dax sat quietly in the Guildmaster's Office, his quill scratching softly against the ledger's pages. The sudden emanation of Dagon's voice startled him — was it audible, or merely a whisper in his mind? Wizards always had a way of blurring that line. He paused, the memory of the Ascension Ritual flooding back. The sacrifice it demanded, the hope it ignited — it was all etched deeply into his soul now.
+
+With deliberate care, he set the quill down and closed the leather-bound ledger, its worn cover a testament to the meticulous record-keeping within. Rising, he slid the book onto a shelf among many others. His strides carried him through the labyrinthine halls and hidden passages of the Guild, a route so familiar it felt like second nature...like Home. At last, he emerged outside The Sapphire Heart, leaning against a weathered wooden post. His gaze lifted to the sky, where the brilliant blue dome stretched endlessly — a marvel that has not ceased to amaze him.
+
+In the distance, Icebite played with Evie, his enthusiasm boundless as he showed off a new trick with his sling or solved yet another puzzle-lock. They noticed him watching. Evie’s smile radiated warmth, while Icebite waved with boyish exuberance before pretending to sling a rock at Dax. He chuckled softly, their responses a welcome reprieve.
+
+Dax’s voice whispered, low and steady. "I remember what you told me in the chamber, Dagon...and I always will. You’ve given me — given all of us — a legacy and a hope worth fighting for." From the depths of his leather coat, he retrieved a smoking pipe, its craftsmanship worn but beautiful. He held it for a moment, a tangible connection to the companion he had lost. "But you will be missed, old friend...most deeply." With reverence, he tucked the pipe away and strolled toward Evie and Icebite, the weight of his memories balanced by the promise of their companionship.

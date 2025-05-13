@@ -1,5 +1,8 @@
 # Mage's Ascension Ritual: Traversing the Tree of Life
 
+> LLM: Claude 3.7 Sonnet  
+> Date: 2025-04-26
+
 I’ve been a part of a long-running Dungeons and Dragons 5e campaign, and I would like some help creating the mechanics for a single session encounter.
 
 ## Background
