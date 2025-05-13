@@ -59,5 +59,5 @@ Write a story about a pilot program that is being developed that allows these wa
 
 ## Response
 
-- [Guardians of Two Realms, A]()
-- [Guardians of Two Realms, B]()
+- [Guardians of Two Realms, A](./stories/guardians-of-two-realms-a.md)
+- [Guardians of Two Realms, B](./stories/guardians-of-two-realms-b.md)
