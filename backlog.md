@@ -4,7 +4,6 @@ Take the details from the [llm-chronicle repository](https://github.com/JaimeSti
 
 The following prompts still need to be reviewed for concepts:
 
-- [Structuring a Sci-Fi Ritual Repository](https://claude.ai/chat/c93ff0d6-f1a5-4b95-89a9-05d59aa0d368)
 - [Layered Story Development in Claude](https://claude.ai/chat/c1172c41-1cf2-41e0-934b-c4da72bc834d)
 - [Collaborative Sci-Fi Adventure](https://claude.ai/chat/311832cf-bb88-4f79-bc2f-dcb3ada85667)
 - [Nepotism and Capitalistic Corruption in US Defense](https://claude.ai/chat/de097838-b174-4c32-8987-f358385dad71)
