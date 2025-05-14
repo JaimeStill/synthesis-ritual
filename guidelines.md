@@ -10,6 +10,10 @@ The ritual serves as both methodology and philosophy—a framework for navigatin
 
 The synthesis ritual process consists of several interconnected stages. The daily practice involves engaging with one or more of these stages, understanding that the complete ritual cycle may span days, months, or even years. The deliberate nature of this process honors both spontaneous inspiration and rigorous development.
 
+### The Synthesis Operation
+
+When developing new a new concept, do it in isolation of the raw idea. If you intend the idea to be part of a larger developing artifact or pre-artifact concept, perform a `synthesis` operation: load the context of the concept, along with the infrastructure of the artifact or concept, into an LLM and flesh out how you envision the concept to integrate into the larger structure. Use the conversation to solidify details, then generate an artifact that can be used for integration.
+
 ### Stages of the Ritual
 
 1. **`concepts`** - Development of an idea from mental inception into textual form. This stage clarifies the details of the idea and prepares it for engagement with an LLM. Ideas should originate from authentic human experience, intuition, or insight before being brought into conversation with synthetic intelligence.

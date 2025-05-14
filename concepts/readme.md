@@ -4,13 +4,12 @@
 
 ## Structure
 
-Concepts are initially structured as loose files in the root of the directory. Whenever an idea becomes more fully fleshed out and associated with an [`artifact`](../artifacts/), it will be archived into a sub-directory named after the artifact.
+Concepts are initially structured as loose files, or collections of files embedded in a subdirectory, organized into a category.
 
 ## Usage Guidelines
 
+> [!IMPORTANT]
+> Refer to the [Synthesis Ritual Guidelines](../guidelines.md)
+
 - Keep concept documents focused on a single idea or closely related cluster of ideas.
 - Use plain text or markdown for maximum accessibility.
-- Include context on whether the concept relates to existing infrastructure elsewhere in the repository.
-- Tag concepts appropriately to facilitate cross-referencing and synthesis.
-
-When a concept matures or combines with others to form a more coherent whole, it will develop into an artifact.
