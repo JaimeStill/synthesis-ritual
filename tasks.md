@@ -1,0 +1,9 @@
+# Tasks
+
+- [ ] Have Claude integrate concepts from [`consciousness-tether`](./concepts/consciousness-tether/) into the evolutionary structure of the [`quantum-synthesis`](./concepts/quantum-synthesis/) developmental narrative.
+    - Establish scientific discoveries
+    - Derive technological innovations from these discoveries
+    - Determine the impacts these advancements have on the overall narrative; begin to think through how you and the world around you may be affected.
+- [ ] Start fleshing out more hard-science / technology focused developments within the timeline. Use this as an opportunity to evaluate terms specified in the glossary.
+- [ ] Start generating an appendix of technologies and scientific discoveries.
+- [ ] Begin the process of fleshing out characters, settings, organizations; all of the aspects that bring live to the narrative.
