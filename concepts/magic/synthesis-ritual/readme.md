@@ -10,8 +10,8 @@ I'm working on planning out the repository structure for synthesis-ritual, the r
 I want the project structure to characterize the nature of a blending of sci-fi, technology, and ritual mysticism in the theme of its vernacular. Similar to the name of the repository itself, synthesis-ritual. I would like the following folder structure to capture the evolving nature of ideas, and would appreciate help establishing properly stylized names for these folders fitting in the theme of the repository:
 
 - `ideas` - initial raw ideas, categorized into sub-folders by theme
-- `artifacts` - represent a more fleshed out, synthesized iteration of an idea or set of ideas
-- `publication` - a fully realized artifact or set of artifacts composed into a final product
+- `drafts` - represent a more fleshed out, synthesized iteration of an idea or set of ideas
+- `codex` - a fully realized draft or set of drafts composed into a final product
 - `experiment` - an area that hosts self-contained projects for exploring code-based concepts
 
 This structure will probably evolve over time, but this is a good starting structure to get things going.
@@ -32,7 +32,7 @@ synthesis-ritual/
 │   ├── biosymbiosis/      # Ecological/biological harmonies
 │   └── metaphysics/       # Philosophical foundations
 │
-├── codex/                 # Instead of "artifacts" - synthesized iterations
+├── codex/                 # Instead of "drafts" - synthesized iterations
 │   ├── manifestations/    # Individual realized concepts
 │   └── convergences/      # Combined concept explorations
 │
@@ -106,7 +106,7 @@ Does this align better with your vision for a more subtle approach?
 I have the following structure formalized so far:
 
 - `concepts` - initial raw ideas
-- `artifacts` - the documents that represent a more fleshed out, synthesized iteration of an idea or set of ideas
+- `drafts` - the documents that represent a more fleshed out, synthesized iteration of an idea or set of ideas
 - `lab` - hosts a collection of experiments
 
 Now I would like to develop a better term for `publication` that refers to it as the finalized form of a developed work.
@@ -128,7 +128,7 @@ Of these, I think **`essence`** or **`signal`** might best capture what you're l
 ```
 synthesis-ritual/
 ├── concepts/      # Initial raw ideas
-├── artifacts/     # More developed iterations
+├── drafts/     # More developed iterations
 ├── lab/           # Experimental space
 └── essence/       # (or signal/) Finalized form of work
 ```
@@ -157,7 +157,7 @@ Given your existing structure and desire for subtlety with a hint of the mystica
 ```
 synthesis-ritual/
 ├── concepts/      # Initial raw ideas
-├── artifacts/     # More developed iterations
+├── drafts/     # More developed iterations
 ├── lab/           # Experimental space
 └── vault/         # (or codex/) Collection of finalized, powerful works
 ```
@@ -169,7 +169,7 @@ The term "vault" is simple yet evokes both technological security and a reposito
 I like `codex` more, as `vault` indicates more that it is locked away and inaccessible. We will go with that:
 
 - `concepts`
-- `artifacts`
+- `drafts`
 - `lab`
 - `codex`
 
@@ -182,7 +182,7 @@ Your finalized structure for the `synthesis-ritual` repository is:
 ```
 synthesis-ritual/
 ├── concepts/      # Initial raw ideas
-├── artifacts/     # More developed iterations
+├── drafts/     # More developed iterations
 ├── lab/           # Experimental space
 └── codex/         # Collection of finalized, powerful works
 ```

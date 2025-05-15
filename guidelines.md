@@ -12,17 +12,17 @@ The synthesis ritual process consists of several interconnected stages. The dail
 
 ### The Synthesis Operation
 
-When developing new a new concept, do it in isolation of the raw idea. If you intend the idea to be part of a larger developing artifact or pre-artifact concept, perform a `synthesis` operation: load the context of the concept, along with the infrastructure of the artifact or concept, into an LLM and flesh out how you envision the concept to integrate into the larger structure. Use the conversation to solidify details, then generate an artifact that can be used for integration.
+When developing new a new concept, do it in isolation of the raw idea. If you intend the idea to be part of a larger developing draft or pre-draft concept, perform a `synthesis` operation: load the context of the concept, along with the infrastructure of the draft or concept, into an LLM and flesh out how you envision the concept to integrate into the larger structure. Use the conversation to solidify details, then generate a draft that can be used for integration.
 
 ### Stages of the Ritual
 
 1. **`concepts`** - Development of an idea from mental inception into textual form. This stage clarifies the details of the idea and prepares it for engagement with an LLM. Ideas should originate from authentic human experience, intuition, or insight before being brought into conversation with synthetic intelligence.
 
-2. **`artifacts`** - Working through one or more concepts with an LLM through directed conversation. This dialogue should challenge assumptions, explore implications, and ultimately result in the generation of artifacts—more refined expressions of the original concept. The artifact represents a synthesis of human and machine cognition while preserving the primacy of human creativity.
+2. **`drafts`** - Working through one or more concepts with an LLM through directed conversation. This dialogue should challenge assumptions, explore implications, and ultimately result in the generation of drafts—more refined expressions of the original concept. The draft represents a synthesis of human and machine cognition while preserving the primacy of human creativity.
 
-3. **`lab`** - (Optional) Developing an artifact into a testable hypothesis and conducting experiments to validate or refine it. Not all concepts require experimental validation, but when practical application is valuable, this stage involves code-based implementations, simulations, or other forms of experimentation that bring theoretical concepts into tangible form. The artifact typically guides the execution of the experiment, providing structure and direction.
+3. **`lab`** - (Optional) Developing an idea into a testable `hypothesis` and conducting experiments to validate or refine it. Not all concepts require experimental validation, but when practical application is valuable, this stage involves code-based implementations, simulations, or other forms of experimentation that bring theoretical concepts into tangible form. The hypothesis typically guides the execution of the experiment, providing structure and direction.
 
-4. **`codex`** - Finalizing an aggregation of one or more artifacts and/or experiments for inclusion in the codex. This stage represents the culmination of the ritual process, where refined works are prepared for archival and distribution.
+4. **`codex`** - Finalizing an aggregation of one or more drafts and/or experiments for inclusion in the codex. This stage represents the culmination of the ritual process, where refined works are prepared for archival and distribution.
 
 The iterative development of the `synthesis-ritual` repository itself is also part of the ritual practice, as it strengthens the architecture that supports the manifestation of ideas.
 
