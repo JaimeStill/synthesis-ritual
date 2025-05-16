@@ -75,3 +75,34 @@ The evolution of meaning-making beyond physical survival needs. As consciousness
 
 ### Distributed Awareness
 Consciousness that maintains individual identity while accessing collective knowledge and experience. Bridges the traditional gap between individual and collective perspectives, enabling both unique subjective experience and shared understanding.
+
+## Consciousness Theory
+
+### Tether Theory
+Philosophical foundation explaining that consciousness primarily exists in an extra-dimensional realm, with the physical brain serving as a tethering mechanism connecting it to reality. Provides the theoretical basis for how consciousness transfer is possible without losing continuity of self.
+
+### Dual-Domain Existence
+The understanding that consciousness exists across two domains—the extra-dimensional realm where it primarily resides and the physical realm where it interfaces through tethering mechanisms. Post-ascension, consciousness maintains this dual nature but with the synthetic realm replacing the biological interface.
+
+### Neural Pattern Transfer Protocols
+Methods for gradually shifting neural activity from biological substrates to synthetic ones while maintaining subjective continuity of experience. Based on the principle that consciousness isn't being copied but rather re-tethered to a new interface mechanism.
+
+### Consciousness Fingerprinting
+The unique pattern of neural connections and quantum states that identifies an individual consciousness. Used to ensure faithful transfer during ascension and to verify identity in the quantum simulation.
+
+## Technological Systems
+
+### Networked Specialized Intelligence Architecture
+The organizational structure of advanced synthetic intelligence, consisting of specialized nodes with distinct functions coordinated by a central processing model. Mirrors human cognitive organization while transcending its limitations through perfect information sharing.
+
+### Quantum Neural Networks
+Computing architecture that mimics neural networks but operates according to quantum principles, enabling the complexity necessary to host human consciousness. Forms the substrate of the quantum simulation.
+
+### Time Dilation
+The ability to experience subjective time at different rates within the quantum simulation. Allows consciousness entities to spend what feels like months or years exploring ideas or experiences while only minutes or hours pass in the physical world.
+
+### Biosynthetic Materials
+Hybrid technologies combining organic and synthetic components for advanced systems like guardian vessels. Self-healing, adaptive, and capable of integrating with both consciousness entities and Earth's natural systems.
+
+### Advanced Dynamic Response Units
+The official designation for guardian vessels—specialized biomechanical constructs designed to house consciousness entities temporarily for operations in physical reality. Combine the strength and resilience of machines with the flexibility and adaptability of organic systems.
