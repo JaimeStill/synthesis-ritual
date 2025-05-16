@@ -26,3 +26,9 @@ Key elements of this world include:
 - **Tether Theory**: The philosophical foundation explaining consciousness as connected to physical reality through tethering mechanisms
 
 Rather than depicting dystopian conflicts between humans and technology, Quantum Synthesis presents a hopeful vision where consciousness evolution, ecological restoration, and the preservation of human creativity and purpose coexist in harmony. It explores profound questions about identity, experience, purpose, and what it means to be human when freed from biological constraints.
+
+## Idea Synthesis Prompt
+
+Use the following to prefix any prompts when loading Claude's context with this directory to develop an idea into a concept:
+
+The context that I have provided represents the narrative development of a sci-fi world currently titled Quantum Synthesis. The idea that follows should be considered in the context of these artifacts.
