@@ -1,6 +1,10 @@
 # Quantum Synthesis: Core Concepts Glossary
 
-This document serves as a definitive reference for the key concepts, technologies, and terminology used throughout the Quantum Synthesis narrative universe.
+This document serves as a definitive reference for the key concepts, technologies, and terminology used throughout Quantum Synthesis.
+
+## Prompt
+
+Please anaylze the `quantum-synthesis` directory and generate an artifact that serves as a definitive reference for the key concepts, technologies, and terminology used throughout the narrative world being developed.
 
 ## Foundational Concepts
 

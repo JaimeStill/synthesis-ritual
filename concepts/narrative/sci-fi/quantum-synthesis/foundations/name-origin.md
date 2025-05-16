@@ -66,7 +66,7 @@ What aspects of these options resonate most with your vision for this world?
 
 ## Prompt
 
-I like **Synthesis**, but feel that I've been using that term so heavily already. For instance, my creative process for synthesizing ideas through conversation with you is called **Synthesis Ritual** and the repository that hosts the captured data is named `synthesis-ritual`. Is there perhaps another term that might work better, or is it just fate leading to the idea that **Synthesis** is indeed the proper name for this universe?
+I like **Synthesis**, but feel that I've been using that term so heavily already. For instance, my creative process for synthesizing ideas through conversation with you is called **Synthesis Ritual** and the repository that hosts the captured data is named `synthesis-ritual`. Is there perhaps another term that might work better, or is it just fate leading to the idea that **Synthesis** is indeed the proper name for this world?
 
 ## Response
 
