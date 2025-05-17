@@ -1,4 +1,4 @@
-# Exploration of Self
+# Reflection: Exploration of Self
 
 Today, I would like to explore the concept of the essence of self and what it means to consciously experience reality; particularly outside of reality in the sense of physical presence.
 
@@ -34,4 +34,6 @@ The first time I ever had an out of body experience was the summer of 2005. I wa
 
 A friend at the time invited me to hang at her house one clear, warm summer evening. After playing with her dog and talking for a bit with her and her roommate, I rolled a joint that we shared between us. When we were done, I was laying in the bed of a truck at the front of the house, staring up into an endless sea of stars. Pink Floyd's album The Dark Side of the Moon played through the truck speakers in the background, and I began to feel myself drift upwards away from my body.
 
-As I started to realize that I was drifting, I looked backward and saw myself laying in the bed of the truck; appearing roughly the size of a car as seen from the window of an airplane at altitude. There was no sense of fear or anxiety, just relaxation and acceptance. I turned my gaze back towards the stars and enjoyed the gentle ride up. When I stopped, I was hovering in low orbit over the Earth. A strange sense of peace had completely consumed me as I floated immersed among the stars, the biosphere of Earth stretched out beneath me. In the stillness of that moment, my thoughts were consumed with the
+As I started to realize that I was drifting, I looked backward and saw myself laying in the bed of the truck; appearing roughly the size of a car as seen from the window of an airplane at altitude. There was no sense of fear or anxiety, just relaxation and acceptance. I turned my gaze back towards the stars and enjoyed the gentle ride up. When I stopped, I was hovering in low orbit over the Earth. A strange sense of peace had completely consumed me as I floated immersed among the stars, the biosphere of Earth stretched out beneath me. In the stillness of that moment, my thoughts were consumed with wonder at how incredible it is to be alive and how unnecessary the vast majority of the issues we encounter in life are.
+
+After I had acknowledged and integrated the message of this experience, I felt myself begin to slowly drift back down towards my body. What had felt like a journey of hours had ultimately taken around 15 minutes. When I was firmly settled back into reality, I just continued to enjoy the moment and the music for a while; questioning yet again "who am I?" and "what am I doing here?".
