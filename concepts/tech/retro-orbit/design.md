@@ -1,4 +1,4 @@
-# RetroOrbit Design System
+# Retro Orbit Design System
 
 > A color system inspired by retro futurism and NASA punk aesthetics
 
