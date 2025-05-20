@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroOrbit: Voyager Palette</title>
+    <style>
+        :root {
+            /* Voyager Palette */
+            --background: #0A0E17;
+            --surface: #141A24;
+            --overlay: #1D2735;
+            --text: #E6EDF3;
+            --subtext: #A0ABC0;
+            --red: #FF5A5F;
+            --orange: #FF9E64;
+            --yellow: #FFCB6B;
+            --green: #7BD88F;
+            --teal: #5CCCC6;
+            --blue: #69A7EB;
+            --purple: #BF94E4;
+            --pink: #F0A6CA;
+            
+            /* Font settings */
+            --retro-font: "Space Mono", Monaco, "Courier New", monospace;
+            --display-font: "Eurostile", "Orbitron", "Arial", sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            font-family: var(--retro-font);
+            padding: 2rem;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(105, 167, 235, 0.05) 0%, transparent 25%),
+                radial-gradient(circle at 80% 70%, rgba(240, 166, 202, 0.05) 0%, transparent 25%);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        h1 {
+            font-family: var(--display-font);
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+            text-shadow: 0 0 10px rgba(105, 167, 235, 0.3), 
+                         0 0 20px rgba(105, 167, 235, 0.2);
+            display: inline-block;
+            position: relative;
+        }
+        
+        h1::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--blue), transparent);
+            margin-top: 5px;
+        }
+        
+        .subtitle {
+            font-family: var(--retro-font);
+            font-size: 1rem;
+            color: var(--subtext);
+            letter-spacing: 1px;
+            display: block;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .palette-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .palette-section {
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            font-family: var(--display-font);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--overlay);
+            color: var(--blue);
+            position: relative;
+        }
+        
+        h2::before {
+            content: "//";
+            color: var(--subtext);
+            margin-right: 0.5rem;
+            font-family: var(--retro-font);
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .color-swatch {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--overlay);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .color-swatch:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 
+                        0 0 10px rgba(105, 167, 235, 0.2);
+        }
+        
+        .color-display {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .color-display span {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: rgba(255, 255, 255, 0.9);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        
+        .color-swatch:hover .color-display span {
+            opacity: 1;
+        }
+        
+        .color-info {
+            padding: 0.75rem;
+            background-color: var(--surface);
+        }
+        
+        .color-name {
+            font-family: var(--display-font);
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .color-hex {
+            font-family: var(--retro-font);
+            font-size: 0.9rem;
+            color: var(--subtext);
+        }
+        
+        .example-section {
+            background-color: var(--surface);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--overlay);
+        }
+        
+        .example-ui {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .example-sidebar {
+            background-color: var(--overlay);
+            border-radius: 8px;
+            padding: 1rem;
+            height: 300px;
+        }
+        
+        .example-main {
+            background-color: var(--background);
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid var(--overlay);
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .example-header {
+            background-color: var(--overlay);
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .red-circle { background-color: var(--red); }
+        .yellow-circle { background-color: var(--yellow); }
+        .green-circle { background-color: var(--green); }
+        
+        .header-text {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+            font-family: var(--display-font);
+        }
+        
+        .menu-item {
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--subtext);
+            transition: background-color 0.2s ease, color 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .menu-item:hover, .menu-item.active {
+            background-color: rgba(105, 167, 235, 0.1);
+            color: var(--text);
+        }
+        
+        .menu-item.active {
+            border-left: 3px solid var(--blue);
+        }
+        
+        .example-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            height: 230px;
+        }
+        
+        .content-card {
+            background-color: var(--overlay);
+            border-radius: 6px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card-header {
+            color: var(--yellow);
+            font-family: var(--display-font);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-content {
+            font-size: 0.8rem;
+            line-height: 1.5;
+            color: var(--subtext);
+        }
+        
+        .stat-bar {
+            height: 6px;
+            background-color: var(--background);
+            border-radius: 3px;
+            margin-top: auto;
+            margin-bottom: 0.5rem;
+            overflow: hidden;
+        }
+        
+        .stat-fill {
+            height: 100%;
+            border-radius: 3px;
+        }
+        
+        .stat-1 { background-color: var(--green); width: 85%; }
+        .stat-2 { background-color: var(--purple); width: 60%; }
+        .stat-3 { background-color: var(--teal); width: 75%; }
+        .stat-4 { background-color: var(--pink); width: 45%; }
+        
+        /* Stars background effect */
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .star {
+            position: absolute;
+            background-color: var(--text);
+            width: 1px;
+            height: 1px;
+            border-radius: 50%;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--overlay);
+            color: var(--subtext);
+            font-size: 0.8rem;
+        }
+        
+        /* Generate 50 stars with random positions */
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 0.3; }
+        }
+        
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <header>
+        <h1>RETROORBIT</h1>
+        <span class="subtitle">Voyager Palette • A deep space-inspired dark theme with accent colors reminiscent of vintage NASA control panels and retro sci-fi designs.</span>
+    </header>
+    
+    <main class="palette-container">
+        <div class="palette-section">
+            <h2>Base Colors</h2>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #0A0E17;">
+                        <span>#0A0E17</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Background</div>
+                        <div class="color-hex">#0A0E17</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #141A24;">
+                        <span>#141A24</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Surface</div>
+                        <div class="color-hex">#141A24</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #1D2735;">
+                        <span>#1D2735</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Overlay</div>
+                        <div class="color-hex">#1D2735</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #E6EDF3; color: #0A0E17;">
+                        <span style="background-color: rgba(10, 14, 23, 0.7); color: #E6EDF3;">#E6EDF3</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Text</div>
+                        <div class="color-hex">#E6EDF3</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #A0ABC0; color: #0A0E17;">
+                        <span style="background-color: rgba(10, 14, 23, 0.7); color: #E6EDF3;">#A0ABC0</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Subtext</div>
+                        <div class="color-hex">#A0ABC0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="palette-section">
+            <h2>Accent Colors</h2>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #FF5A5F;">
+                        <span>#FF5A5F</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Red</div>
+                        <div class="color-hex">#FF5A5F</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #FF9E64;">
+                        <span>#FF9E64</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Orange</div>
+                        <div class="color-hex">#FF9E64</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #FFCB6B;">
+                        <span>#FFCB6B</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Yellow</div>
+                        <div class="color-hex">#FFCB6B</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #7BD88F;">
+                        <span>#7BD88F</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Green</div>
+                        <div class="color-hex">#7BD88F</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #5CCCC6;">
+                        <span>#5CCCC6</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Teal</div>
+                        <div class="color-hex">#5CCCC6</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #69A7EB;">
+                        <span>#69A7EB</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Blue</div>
+                        <div class="color-hex">#69A7EB</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #BF94E4;">
+                        <span>#BF94E4</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Purple</div>
+                        <div class="color-hex">#BF94E4</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #F0A6CA;">
+                        <span>#F0A6CA</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Pink</div>
+                        <div class="color-hex">#F0A6CA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="example-section">
+            <h2>Theme Example</h2>
+            <div class="example-ui">
+                <div class="example-sidebar">
+                    <div class="menu-item active">Mission Control</div>
+                    <div class="menu-item">Diagnostics</div>
+                    <div class="menu-item">Communications</div>
+                    <div class="menu-item">Navigation</div>
+                    <div class="menu-item">Science Log</div>
+                </div>
+                <div class="example-main">
+                    <div class="example-header">
+                        <div class="circle red-circle"></div>
+                        <div class="circle yellow-circle"></div>
+                        <div class="circle green-circle"></div>
+                        <span class="header-text">Voyager Control Panel</span>
+                    </div>
+                    <div class="example-content">
+                        <div class="content-card">
+                            <div class="card-header">System Status</div>
+                            <div class="card-content">All systems operational. Deep space trajectory stable. Communications optimal.</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-1"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-2"></div>
+                            </div>
+                        </div>
+                        <div class="content-card">
+                            <div class="card-header">Telemetry Data</div>
+                            <div class="card-content">Signal integrity at 75%. Recording stellar phenomena in sector 7G. Analyzing radiation patterns.</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-3"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        RetroOrbit: Voyager Palette • A deep space-inspired theme with vintage NASA aesthetics
+    </footer>
+    
+    <script>
+        // Create stars background
+        const starsContainer = document.getElementById('stars');
+        const starCount = 100;
+        
+        for(let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            
+            // Random position
+            const left = Math.floor(Math.random() * 100);
+            const top = Math.floor(Math.random() * 100);
+            
+            // Random size
+            const size = Math.random() * 2;
+            
+            // Random opacity
+            const opacity = Math.random() * 0.5 + 0.3;
+            
+            // Random animation delay
+            const delay = Math.random() * 5;
+            
+            star.style.left = `${left}%`;
+            star.style.top = `${top}%`;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.opacity = opacity;
+            star.style.animation = `twinkle 5s infinite ${delay}s`;
+            
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroOrbit: Launchpad Palette</title>
+    <style>
+        :root {
+            /* Launchpad Palette */
+            --background: #D5D8DB;
+            --surface: #C5CAD3;
+            --overlay: #B7BEC9;
+            --text: #242D3A;
+            --subtext: #536171;
+            --red: #BD3B41;
+            --orange: #C86A3F;
+            --yellow: #D8914B;
+            --green: #457355;
+            --teal: #47807B;
+            --blue: #3B6187;
+            --purple: #725A8C;
+            --pink: #A04E69;
+            
+            /* Font settings */
+            --retro-font: "Space Mono", Monaco, "Courier New", monospace;
+            --display-font: "Eurostile", "Orbitron", "Arial", sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            font-family: var(--retro-font);
+            padding: 2rem;
+            background-image: 
+                linear-gradient(to right, rgba(216, 145, 75, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(59, 97, 135, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        h1 {
+            font-family: var(--display-font);
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+            text-shadow: 0 0 10px rgba(59, 97, 135, 0.2), 
+                         0 0 20px rgba(59, 97, 135, 0.1);
+            display: inline-block;
+            position: relative;
+        }
+        
+        h1::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--blue), transparent);
+            margin-top: 5px;
+        }
+        
+        .subtitle {
+            font-family: var(--retro-font);
+            font-size: 1rem;
+            color: var(--subtext);
+            letter-spacing: 1px;
+            display: block;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .palette-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .palette-section {
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            font-family: var(--display-font);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--overlay);
+            color: var(--blue);
+            position: relative;
+        }
+        
+        h2::before {
+            content: "//";
+            color: var(--subtext);
+            margin-right: 0.5rem;
+            font-family: var(--retro-font);
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .color-swatch {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--overlay);
+            box-shadow: 0 4px 20px rgba(36, 45, 58, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .color-swatch:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(36, 45, 58, 0.15), 
+                        0 0 10px rgba(59, 97, 135, 0.1);
+        }
+        
+        .color-display {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .color-display span {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: rgba(36, 45, 58, 0.9);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        
+        .color-swatch:hover .color-display span {
+            opacity: 1;
+        }
+        
+        .color-info {
+            padding: 0.75rem;
+            background-color: var(--surface);
+        }
+        
+        .color-name {
+            font-family: var(--display-font);
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .color-hex {
+            font-family: var(--retro-font);
+            font-size: 0.9rem;
+            color: var(--subtext);
+        }
+        
+        .example-section {
+            background-color: var(--surface);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: 0 10px 30px rgba(36, 45, 58, 0.1);
+            border: 1px solid var(--overlay);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Blueprint pattern */
+        .example-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(59, 97, 135, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59, 97, 135, 0.04) 1px, transparent 1px);
+            background-size: 10px 10px;
+            pointer-events: none;
+        }
+        
+        .example-ui {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 1rem;
+            margin-top: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .example-sidebar {
+            background-color: var(--overlay);
+            border-radius: 8px;
+            padding: 1rem;
+            height: 300px;
+            border: 1px solid rgba(36, 45, 58, 0.1);
+        }
+        
+        .example-main {
+            background-color: var(--background);
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid var(--overlay);
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .example-header {
+            background-color: var(--overlay);
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .red-circle { background-color: var(--red); }
+        .yellow-circle { background-color: var(--yellow); }
+        .green-circle { background-color: var(--green); }
+        
+        .header-text {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+            font-family: var(--display-font);
+        }
+        
+        .menu-item {
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--text);
+            transition: background-color 0.2s ease, color 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .menu-item:hover, .menu-item.active {
+            background-color: rgba(59, 97, 135, 0.1);
+            color: var(--blue);
+        }
+        
+        .menu-item.active {
+            border-left: 3px solid var(--blue);
+        }
+        
+        .example-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            height: 230px;
+        }
+        
+        .content-card {
+            background-color: var(--overlay);
+            border-radius: 6px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(36, 45, 58, 0.1);
+        }
+        
+        .card-header {
+            color: var(--blue);
+            font-family: var(--display-font);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-content {
+            font-size: 0.8rem;
+            line-height: 1.5;
+            color: var(--text);
+        }
+        
+        .stat-bar {
+            height: 6px;
+            background-color: var(--background);
+            border-radius: 3px;
+            margin-top: auto;
+            margin-bottom: 0.5rem;
+            overflow: hidden;
+        }
+        
+        .stat-fill {
+            height: 100%;
+            border-radius: 3px;
+        }
+        
+        .stat-1 { background-color: var(--green); width: 85%; }
+        .stat-2 { background-color: var(--purple); width: 60%; }
+        .stat-3 { background-color: var(--teal); width: 75%; }
+        .stat-4 { background-color: var(--red); width: 45%; }
+        
+        /* Blueprint shapes */
+        .blueprint-shapes {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        
+        .shape {
+            position: absolute;
+            border: 1px dashed var(--blue);
+        }
+        
+        .circle-shape {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            top: 20px;
+            left: 20px;
+        }
+        
+        .rect-shape {
+            width: 80px;
+            height: 40px;
+            top: 30px;
+            left: 10px;
+        }
+        
+        /* Compass */
+        .compass {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            opacity: 0.3;
+        }
+        
+        .compass::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--blue);
+            border-radius: 50%;
+            top: 5px;
+            left: 5px;
+        }
+        
+        .compass::after {
+            content: "N";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7rem;
+            color: var(--blue);
+        }
+        
+        .compass-needle {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            width: 1px;
+            height: 20px;
+            background-color: var(--red);
+            transform-origin: bottom center;
+            transform: rotate(-45deg);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--overlay);
+            color: var(--subtext);
+            font-size: 0.8rem;
+        }
+        
+        /* Graph paper sections */
+        .graph-paper {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background-image: 
+                linear-gradient(var(--blue) 1px, transparent 1px),
+                linear-gradient(90deg, var(--blue) 1px, transparent 1px);
+            background-size: 10px 10px;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RETROORBIT</h1>
+        <span class="subtitle">Launchpad Palette • A medium-light theme with colors inspired by technical documents, blueprints, and early NASA promotional materials.</span>
+    </header>
+    
+    <main class="palette-container">
+        <div class="palette-section">
+            <h2>Base Colors</h2>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #D5D8DB;">
+                        <span>#D5D8DB</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Background</div>
+                        <div class="color-hex">#D5D8DB</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #C5CAD3;">
+                        <span>#C5CAD3</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Surface</div>
+                        <div class="color-hex">#C5CAD3</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #B7BEC9;">
+                        <span>#B7BEC9</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Overlay</div>
+                        <div class="color-hex">#B7BEC9</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #242D3A; color: #D5D8DB;">
+                        <span style="background-color: rgba(213, 216, 219, 0.8); color: #242D3A;">#242D3A</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Text</div>
+                        <div class="color-hex">#242D3A</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #536171; color: #D5D8DB;">
+                        <span style="background-color: rgba(213, 216, 219, 0.8); color: #242D3A;">#536171</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Subtext</div>
+                        <div class="color-hex">#536171</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="palette-section">
+            <h2>Accent Colors</h2>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #BD3B41;">
+                        <span>#BD3B41</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Red</div>
+                        <div class="color-hex">#BD3B41</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #C86A3F;">
+                        <span>#C86A3F</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Orange</div>
+                        <div class="color-hex">#C86A3F</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #D8914B;">
+                        <span>#D8914B</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Yellow</div>
+                        <div class="color-hex">#D8914B</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #457355;">
+                        <span>#457355</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Green</div>
+                        <div class="color-hex">#457355</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #47807B;">
+                        <span>#47807B</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Teal</div>
+                        <div class="color-hex">#47807B</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #3B6187;">
+                        <span>#3B6187</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Blue</div>
+                        <div class="color-hex">#3B6187</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #725A8C;">
+                        <span>#725A8C</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Purple</div>
+                        <div class="color-hex">#725A8C</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #A04E69;">
+                        <span>#A04E69</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Pink</div>
+                        <div class="color-hex">#A04E69</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="example-section">
+            <div class="blueprint-shapes">
+                <div class="shape circle-shape"></div>
+                <div class="shape rect-shape"></div>
+            </div>
+            <div class="compass">
+                <div class="compass-needle"></div>
+            </div>
+            <div class="graph-paper"></div>
+            <h2>Theme Example</h2>
+            <div class="example-ui">
+                <div class="example-sidebar">
+                    <div class="menu-item active">Technical Specs</div>
+                    <div class="menu-item">Blueprints</div>
+                    <div class="menu-item">System Design</div>
+                    <div class="menu-item">Launch Sequence</div>
+                    <div class="menu-item">Component List</div>
+                </div>
+                <div class="example-main">
+                    <div class="example-header">
+                        <div class="circle red-circle"></div>
+                        <div class="circle yellow-circle"></div>
+                        <div class="circle green-circle"></div>
+                        <span class="header-text">Launchpad Documentation</span>
+                    </div>
+                    <div class="example-content">
+                        <div class="content-card">
+                            <div class="card-header">Technical Summary</div>
+                            <div class="card-content">Rocket propulsion system incorporating new fuel mix. Thrust capacity increased by 15% from previous generation. Heat shield rating: Class A.</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-1"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-2"></div>
+                            </div>
+                        </div>
+                        <div class="content-card">
+                            <div class="card-header">Launch Parameters</div>
+                            <div class="card-content">Optimal launch window: 0600-0830 hrs. Weather conditions required: Wind < 15 knots, Visibility > 5 miles. Pre-flight checks: T-minus 120 min.</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-3"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        RetroOrbit: Launchpad Palette • A medium-light theme inspired by technical documents and blueprints
+    </footer>
+</body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroOrbit: Apollo Palette</title>
+    <style>
+        :root {
+            /* Apollo Palette */
+            --background: #1A1D21;
+            --surface: #25292E;
+            --overlay: #303540;
+            --text: #E8E3DC;
+            --subtext: #B6AEA1;
+            --red: #E35C53;
+            --orange: #E09356;
+            --yellow: #E8C170;
+            --green: #65A373;
+            --teal: #51A39A;
+            --blue: #5585B5;
+            --purple: #9A7AA0;
+            --pink: #CB829F;
+            
+            /* Font settings */
+            --retro-font: "Space Mono", Monaco, "Courier New", monospace;
+            --display-font: "Eurostile", "Orbitron", "Arial", sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            font-family: var(--retro-font);
+            padding: 2rem;
+            background-image: 
+                radial-gradient(circle at 80% 20%, rgba(85, 133, 181, 0.05) 0%, transparent 25%),
+                radial-gradient(circle at 20% 80%, rgba(203, 130, 159, 0.05) 0%, transparent 25%);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        h1 {
+            font-family: var(--display-font);
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+            text-shadow: 0 0 10px rgba(85, 133, 181, 0.3), 
+                         0 0 20px rgba(85, 133, 181, 0.2);
+            display: inline-block;
+            position: relative;
+        }
+        
+        h1::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--blue), transparent);
+            margin-top: 5px;
+        }
+        
+        .subtitle {
+            font-family: var(--retro-font);
+            font-size: 1rem;
+            color: var(--subtext);
+            letter-spacing: 1px;
+            display: block;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .palette-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .palette-section {
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            font-family: var(--display-font);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--overlay);
+            color: var(--blue);
+            position: relative;
+        }
+        
+        h2::before {
+            content: "//";
+            color: var(--subtext);
+            margin-right: 0.5rem;
+            font-family: var(--retro-font);
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .color-swatch {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--overlay);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .color-swatch:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 
+                        0 0 10px rgba(85, 133, 181, 0.2);
+        }
+        
+        .color-display {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .color-display span {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: rgba(255, 255, 255, 0.9);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        
+        .color-swatch:hover .color-display span {
+            opacity: 1;
+        }
+        
+        .color-info {
+            padding: 0.75rem;
+            background-color: var(--surface);
+        }
+        
+        .color-name {
+            font-family: var(--display-font);
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .color-hex {
+            font-family: var(--retro-font);
+            font-size: 0.9rem;
+            color: var(--subtext);
+        }
+        
+        .example-section {
+            background-color: var(--surface);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--overlay);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .example-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50,50 L60,40 L50,30 L40,40 L50,50 Z' stroke='%23303540' fill='none' stroke-width='0.5'/%3E%3C/svg%3E");
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .example-ui {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 1rem;
+            margin-top: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .example-sidebar {
+            background-color: var(--overlay);
+            border-radius: 8px;
+            padding: 1rem;
+            height: 300px;
+            border: 1px solid rgba(232, 227, 220, 0.1);
+        }
+        
+        .example-main {
+            background-color: var(--background);
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid var(--overlay);
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .example-header {
+            background-color: var(--overlay);
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .red-circle { background-color: var(--red); }
+        .yellow-circle { background-color: var(--yellow); }
+        .green-circle { background-color: var(--green); }
+        
+        .header-text {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+            font-family: var(--display-font);
+        }
+        
+        .menu-item {
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--subtext);
+            transition: background-color 0.2s ease, color 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .menu-item:hover, .menu-item.active {
+            background-color: rgba(85, 133, 181, 0.1);
+            color: var(--text);
+        }
+        
+        .menu-item.active {
+            border-left: 3px solid var(--blue);
+        }
+        
+        .example-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            height: 230px;
+        }
+        
+        .content-card {
+            background-color: var(--overlay);
+            border-radius: 6px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(232, 227, 220, 0.05);
+        }
+        
+        .card-header {
+            color: var(--yellow);
+            font-family: var(--display-font);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-content {
+            font-size: 0.8rem;
+            line-height: 1.5;
+            color: var(--subtext);
+        }
+        
+        .stat-bar {
+            height: 6px;
+            background-color: var(--background);
+            border-radius: 3px;
+            margin-top: auto;
+            margin-bottom: 0.5rem;
+            overflow: hidden;
+        }
+        
+        .stat-fill {
+            height: 100%;
+            border-radius: 3px;
+        }
+        
+        .stat-1 { background-color: var(--green); width: 85%; }
+        .stat-2 { background-color: var(--purple); width: 60%; }
+        .stat-3 { background-color: var(--teal); width: 75%; }
+        .stat-4 { background-color: var(--pink); width: 45%; }
+        
+        /* Noise texture */
+        .noise {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: 100;
+        }
+        
+        /* Apollo mission badge */
+        .mission-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--surface);
+            border: 1px solid rgba(232, 227, 220, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--display-font);
+            font-size: 1rem;
+            color: var(--text);
+        }
+        
+        .mission-badge::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px dashed rgba(232, 227, 220, 0.2);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--overlay);
+            color: var(--subtext);
+            font-size: 0.8rem;
+        }
+        
+        /* Moon phases effect */
+        .moon-container {
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 120px;
+            height: 120px;
+            opacity: 0.15;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        
+        .moon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: var(--text);
+            box-shadow: 0 0 20px rgba(232, 227, 220, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="noise"></div>
+    
+    <header>
+        <h1>RETROORBIT</h1>
+        <span class="subtitle">Apollo Palette \u2022 A medium-dark theme inspired by the Apollo era space program with warm, slightly faded accent colors.</span>
+    </header>
+    
+    <main class="palette-container">
+        <div class="palette-section">
+            <h2>Base Colors</h2>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #1A1D21;">
+                        <span>#1A1D21</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Background</div>
+                        <div class="color-hex">#1A1D21</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #25292E;">
+                        <span>#25292E</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Surface</div>
+                        <div class="color-hex">#25292E</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #303540;">
+                        <span>#303540</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Overlay</div>
+                        <div class="color-hex">#303540</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #E8E3DC; color: #1A1D21;">
+                        <span style="background-color: rgba(26, 29, 33, 0.7); color: #E8E3DC;">#E8E3DC</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Text</div>
+                        <div class="color-hex">#E8E3DC</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #B6AEA1; color: #1A1D21;">
+                        <span style="background-color: rgba(26, 29, 33, 0.7); color: #E8E3DC;">#B6AEA1</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Subtext</div>
+                        <div class="color-hex">#B6AEA1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="palette-section">
+            <h2>Accent Colors</h2>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #E35C53;">
+                        <span>#E35C53</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Red</div>
+                        <div class="color-hex">#E35C53</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #E09356;">
+                        <span>#E09356</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Orange</div>
+                        <div class="color-hex">#E09356</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #E8C170;">
+                        <span>#E8C170</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Yellow</div>
+                        <div class="color-hex">#E8C170</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #65A373;">
+                        <span>#65A373</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Green</div>
+                        <div class="color-hex">#65A373</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #51A39A;">
+                        <span>#51A39A</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Teal</div>
+                        <div class="color-hex">#51A39A</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #5585B5;">
+                        <span>#5585B5</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Blue</div>
+                        <div class="color-hex">#5585B5</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #9A7AA0;">
+                        <span>#9A7AA0</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Purple</div>
+                        <div class="color-hex">#9A7AA0</div>
+                    </div>
+                </div>
+                
+                <div class="color-swatch">
+                    <div class="color-display" style="background-color: #CB829F;">
+                        <span>#CB829F</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Pink</div>
+                        <div class="color-hex">#CB829F</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="example-section">
+            <div class="moon-container">
+                <div class="moon"></div>
+            </div>
+            <div class="mission-badge">A11</div>
+            <h2>Theme Example</h2>
+            <div class="example-ui">
+                <div class="example-sidebar">
+                    <div class="menu-item active">Mission Log</div>
+                    <div class="menu-item">Lunar Module</div>
+                    <div class="menu-item">Communications</div>
+                    <div class="menu-item">Navigation</div>
+                    <div class="menu-item">Experiments</div>
+                </div>
+                <div class="example-main">
+                    <div class="example-header">
+                        <div class="circle red-circle"></div>
+                        <div class="circle yellow-circle"></div>
+                        <div class="circle green-circle"></div>
+                        <span class="header-text">Apollo Mission Terminal</span>
+                    </div>
+                    <div class="example-content">
+                        <div class="content-card">
+                            <div class="card-header">Lunar Module Status</div>
+                            <div class="card-content">All systems nominal. Descent stage fuel at 85%. Eagle is ready for lunar landing approach.</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-1"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-2"></div>
+                            </div>
+                        </div>
+                        <div class="content-card">
+                            <div class="card-header">Mission Timeline</div>
+                            <div class="card-content">T-minus 4 hours to lunar descent. Surface EVA scheduled for 0400 hours. Sample collection priority: Sector 4.</div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-3"></div>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="stat-fill stat-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        RetroOrbit: Apollo Palette \u2022 A medium-dark theme inspired by the Apollo era space program
+    </footer>
+</body>
+</html>
