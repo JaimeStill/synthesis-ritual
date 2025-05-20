@@ -57,24 +57,24 @@ A deep space-inspired dark theme with accent colors reminiscent of vintage NASA 
 
 | Color | Value | Preview |
 |-------|-------|---------|
-| Background | `#0A0E17` | ![Background](https://placehold.co/120x120/E6EDF3/0A0E17.png?text=Background) |
-| Surface | `#141A24` | ![Surface](https://placehold.co/120x120/E6EDF3/141A24.png?text=Surface) |
-| Overlay | `#1D2735` | ![Overlay](https://placehold.co/120x120/E6EDF3/1D2735.png?text=Overlay) |
-| Text | `#E6EDF3` | ![Text](https://placehold.co/120x120/0A0E17/E6EDF3.png?text=Text) |
-| Subtext | `#A0ABC0` | ![Subtext](https://placehold.co/120x120/0A0E17/A0ABC0.png?text=Subtext) |
+| Background | `#0A0E17` | ![Background](https://placehold.co/90x90/E6EDF3/0A0E17.png?text=Background) |
+| Surface | `#141A24` | ![Surface](https://placehold.co/90x90/E6EDF3/141A24.png?text=Surface) |
+| Overlay | `#1D2735` | ![Overlay](https://placehold.co/90x90/E6EDF3/1D2735.png?text=Overlay) |
+| Text | `#E6EDF3` | ![Text](https://placehold.co/90x90/0A0E17/E6EDF3.png?text=Text) |
+| Subtext | `#A0ABC0` | ![Subtext](https://placehold.co/90x90/0A0E17/A0ABC0.png?text=Subtext) |
 
 ### Accent & Contrast Colors
 
 | Color | Accent Value | Contrast Value | Preview |
 |-------|-------------|---------------|---------|
-| Red | `#FF5A5F` | `#f30007` | ![Red](https://placehold.co/120x120/f30007/FF5A5F.png?text=Red) |
-| Orange | `#FF9E64` | `#fd5f00` | ![Orange](https://placehold.co/120x120/fd5f00/FF9E64.png?text=Orange) |
-| Yellow | `#FFCB6B` | `#ffa705` | ![Yellow](https://placehold.co/120x120/ffa705/FFCB6B.png?text=Yellow) |
-| Green | `#7BD88F` | `#2ac34b` | ![Green](https://placehold.co/120x120/2ac34b/7BD88F.png?text=Green) |
-| Teal | `#5CCCC6` | `#259d97` | ![Teal](https://placehold.co/120x120/259d97/5CCCC6.png?text=Teal) |
-| Blue | `#69A7EB` | `#1072de` | ![Blue](https://placehold.co/120x120/1072de/69A7EB.png?text=Blue) |
-| Purple | `#BF94E4` | `#8f37db` | ![Purple](https://placehold.co/120x120/8f37db/BF94E4.png?text=Purple) |
-| Pink | `#F0A6CA` | `#ec4496` | ![Pink](https://placehold.co/120x120/ec4496/F0A6CA.png?text=Pink) |
+| Red | `#FF5A5F` | `#f30007` | ![Red](https://placehold.co/90x90/f30007/FF5A5F.png?text=Red) |
+| Orange | `#FF9E64` | `#fd5f00` | ![Orange](https://placehold.co/90x90/fd5f00/FF9E64.png?text=Orange) |
+| Yellow | `#FFCB6B` | `#ffa705` | ![Yellow](https://placehold.co/90x90/ffa705/FFCB6B.png?text=Yellow) |
+| Green | `#7BD88F` | `#2ac34b` | ![Green](https://placehold.co/90x90/2ac34b/7BD88F.png?text=Green) |
+| Teal | `#5CCCC6` | `#259d97` | ![Teal](https://placehold.co/90x90/259d97/5CCCC6.png?text=Teal) |
+| Blue | `#69A7EB` | `#1072de` | ![Blue](https://placehold.co/90x90/1072de/69A7EB.png?text=Blue) |
+| Purple | `#BF94E4` | `#8f37db` | ![Purple](https://placehold.co/90x90/8f37db/BF94E4.png?text=Purple) |
+| Pink | `#F0A6CA` | `#ec4496` | ![Pink](https://placehold.co/90x90/ec4496/F0A6CA.png?text=Pink) |
 
 ### Accessibility Notes
 
@@ -126,24 +126,24 @@ A medium-dark theme inspired by the Apollo era space program with warm, slightly
 
 | Color | Value | Preview |
 |-------|-------|---------|
-| Background | `#1A1D21` | ![Background](https://placehold.co/120x120/E8E3DC/1A1D21.png?text=Background) |
-| Surface | `#25292E` | ![Surface](https://placehold.co/120x120/E8E3DC/25292E.png?text=Surface) |
-| Overlay | `#303540` | ![Overlay](https://placehold.co/120x120/E8E3DC/303540.png?text=Overlay) |
-| Text | `#E8E3DC` | ![Text](https://placehold.co/120x120/1A1D21/E8E3DC.png?text=Text) |
-| Subtext | `#B6AEA1` | ![Subtext](https://placehold.co/120x120/1A1D21/B6AEA1.png?text=Subtext) |
+| Background | `#1A1D21` | ![Background](https://placehold.co/90x90/E8E3DC/1A1D21.png?text=Background) |
+| Surface | `#25292E` | ![Surface](https://placehold.co/90x90/E8E3DC/25292E.png?text=Surface) |
+| Overlay | `#303540` | ![Overlay](https://placehold.co/90x90/E8E3DC/303540.png?text=Overlay) |
+| Text | `#E8E3DC` | ![Text](https://placehold.co/90x90/1A1D21/E8E3DC.png?text=Text) |
+| Subtext | `#B6AEA1` | ![Subtext](https://placehold.co/90x90/1A1D21/B6AEA1.png?text=Subtext) |
 
 ### Accent & Contrast Colors
 
 | Color | Accent Value | Contrast Value | Preview |
 |-------|-------------|---------------|---------|
-| Red | `#E35C53` | `#a61a10` | ![Red](https://placehold.co/120x120/a61a10/E35C53.png?text=Red) |
-| Orange | `#E09356` | `#a35313` | ![Orange](https://placehold.co/120x120/a35313/E09356.png?text=Orange) |
-| Yellow | `#E8C170` | `#c58b13` | ![Yellow](https://placehold.co/120x120/c58b13/E8C170.png?text=Yellow) |
-| Green | `#65A373` | `#2c5c37` | ![Green](https://placehold.co/120x120/2c5c37/65A373.png?text=Green) |
-| Teal | `#51A39A` | `#21544e` | ![Teal](https://placehold.co/120x120/21544e/51A39A.png?text=Teal) |
-| Blue | `#5585B5` | `#234567` | ![Blue](https://placehold.co/120x120/234567/5585B5.png?text=Blue) |
-| Purple | `#9A7AA0` | `#5b3962` | ![Purple](https://placehold.co/120x120/5b3962/9A7AA0.png?text=Purple) |
-| Pink | `#CB829F` | `#9b325c` | ![Pink](https://placehold.co/120x120/9b325c/CB829F.png?text=Pink) |
+| Red | `#E35C53` | `#a61a10` | ![Red](https://placehold.co/90x90/a61a10/E35C53.png?text=Red) |
+| Orange | `#E09356` | `#a35313` | ![Orange](https://placehold.co/90x90/a35313/E09356.png?text=Orange) |
+| Yellow | `#E8C170` | `#c58b13` | ![Yellow](https://placehold.co/90x90/c58b13/E8C170.png?text=Yellow) |
+| Green | `#65A373` | `#2c5c37` | ![Green](https://placehold.co/90x90/2c5c37/65A373.png?text=Green) |
+| Teal | `#51A39A` | `#21544e` | ![Teal](https://placehold.co/90x90/21544e/51A39A.png?text=Teal) |
+| Blue | `#5585B5` | `#234567` | ![Blue](https://placehold.co/90x90/234567/5585B5.png?text=Blue) |
+| Purple | `#9A7AA0` | `#5b3962` | ![Purple](https://placehold.co/90x90/5b3962/9A7AA0.png?text=Purple) |
+| Pink | `#CB829F` | `#9b325c` | ![Pink](https://placehold.co/90x90/9b325c/CB829F.png?text=Pink) |
 
 ### Accessibility Notes
 
@@ -195,24 +195,24 @@ A medium-light theme with colors inspired by technical documents, blueprints, an
 
 | Color | Value | Preview |
 |-------|-------|---------|
-| Background | `#D5D8DB` | ![Background](https://placehold.co/120x120/242D3A/D5D8DB.png?text=Background) |
-| Surface | `#C5CAD3` | ![Surface](https://placehold.co/120x120/242D3A/C5CAD3.png?text=Surface) |
-| Overlay | `#B7BEC9` | ![Overlay](https://placehold.co/120x120/242D3A/B7BEC9.png?text=Overlay) |
-| Text | `#242D3A` | ![Text](https://placehold.co/120x120/D5D8DB/242D3A.png?text=Text) |
-| Subtext | `#536171` | ![Subtext](https://placehold.co/120x120/D5D8DB/536171.png?text=Subtext) |
+| Background | `#D5D8DB` | ![Background](https://placehold.co/90x90/242D3A/D5D8DB.png?text=Background) |
+| Surface | `#C5CAD3` | ![Surface](https://placehold.co/90x90/242D3A/C5CAD3.png?text=Surface) |
+| Overlay | `#B7BEC9` | ![Overlay](https://placehold.co/90x90/242D3A/B7BEC9.png?text=Overlay) |
+| Text | `#242D3A` | ![Text](https://placehold.co/90x90/D5D8DB/242D3A.png?text=Text) |
+| Subtext | `#536171` | ![Subtext](https://placehold.co/90x90/D5D8DB/536171.png?text=Subtext) |
 
 ### Accent & Contrast Colors
 
 | Color | Accent Value | Contrast Value | Preview |
 |-------|-------------|---------------|---------|
-| Red | `#BD3B41` | `#4d1215` | ![Red](https://placehold.co/120x120/4d1215/BD3B41.png?text=Red) |
-| Orange | `#C86A3F` | `#5b2a13` | ![Orange](https://placehold.co/120x120/5b2a13/C86A3F.png?text=Orange) |
-| Yellow | `#D8914B` | `#784512` | ![Yellow](https://placehold.co/120x120/784512/D8914B.png?text=Yellow) |
-| Green | `#457355` | `#0a150e` | ![Green](https://placehold.co/120x120/0a150e/457355.png?text=Green) |
-| Teal | `#47807B` | `#0e201e` | ![Teal](https://placehold.co/120x120/0e201e/47807B.png?text=Teal) |
-| Blue | `#3B6187` | `#0a141f` | ![Blue](https://placehold.co/120x120/0a141f/3B6187.png?text=Blue) |
-| Purple | `#725A8C` | `#261a33` | ![Purple](https://placehold.co/120x120/261a33/725A8C.png?text=Purple) |
-| Pink | `#A04E69` | `#3d1824` | ![Pink](https://placehold.co/120x120/3d1824/A04E69.png?text=Pink) |
+| Red | `#BD3B41` | `#4d1215` | ![Red](https://placehold.co/90x90/4d1215/BD3B41.png?text=Red) |
+| Orange | `#C86A3F` | `#5b2a13` | ![Orange](https://placehold.co/90x90/5b2a13/C86A3F.png?text=Orange) |
+| Yellow | `#D8914B` | `#784512` | ![Yellow](https://placehold.co/90x90/784512/D8914B.png?text=Yellow) |
+| Green | `#457355` | `#0a150e` | ![Green](https://placehold.co/90x90/0a150e/457355.png?text=Green) |
+| Teal | `#47807B` | `#0e201e` | ![Teal](https://placehold.co/90x90/0e201e/47807B.png?text=Teal) |
+| Blue | `#3B6187` | `#0a141f` | ![Blue](https://placehold.co/90x90/0a141f/3B6187.png?text=Blue) |
+| Purple | `#725A8C` | `#261a33` | ![Purple](https://placehold.co/90x90/261a33/725A8C.png?text=Purple) |
+| Pink | `#A04E69` | `#3d1824` | ![Pink](https://placehold.co/90x90/3d1824/A04E69.png?text=Pink) |
 
 ### Accessibility Notes
 
@@ -265,24 +265,24 @@ A light theme inspired by Space Age optimism, retrofuturistic advertisements, an
 
 | Color | Value | Preview |
 |-------|-------|---------|
-| Background | `#EFF1F5` | ![Background](https://placehold.co/120x120/1C2430/EFF1F5.png?text=Background) |
-| Surface | `#E1E5ED` | ![Surface](https://placehold.co/120x120/1C2430/E1E5ED.png?text=Surface) |
-| Overlay | `#D1D7E3` | ![Overlay](https://placehold.co/120x120/1C2430/D1D7E3.png?text=Overlay) |
-| Text | `#1C2430` | ![Text](https://placehold.co/120x120/EFF1F5/1C2430.png?text=Text) |
-| Subtext | `#4C5A70` | ![Subtext](https://placehold.co/120x120/EFF1F5/4C5A70.png?text=Subtext) |
+| Background | `#EFF1F5` | ![Background](https://placehold.co/90x90/1C2430/EFF1F5.png?text=Background) |
+| Surface | `#E1E5ED` | ![Surface](https://placehold.co/90x90/1C2430/E1E5ED.png?text=Surface) |
+| Overlay | `#D1D7E3` | ![Overlay](https://placehold.co/90x90/1C2430/D1D7E3.png?text=Overlay) |
+| Text | `#1C2430` | ![Text](https://placehold.co/90x90/EFF1F5/1C2430.png?text=Text) |
+| Subtext | `#4C5A70` | ![Subtext](https://placehold.co/90x90/EFF1F5/4C5A70.png?text=Subtext) |
 
 ### Accent & Contrast Colors
 
 | Color | Accent Value | Contrast Value | Preview |
 |-------|-------------|---------------|---------|
-| Red | `#CF3B43` | `#601115` | ![Red](https://placehold.co/120x120/601115/CF3B43.png?text=Red) |
-| Orange | `#D7623B` | `#6b250e` | ![Orange](https://placehold.co/120x120/6b250e/D7623B.png?text=Orange) |
-| Yellow | `#E19642` | `#7e480c` | ![Yellow](https://placehold.co/120x120/7e480c/E19642.png?text=Yellow) |
-| Green | `#398060` | `#081811` | ![Green](https://placehold.co/120x120/081811/398060.png?text=Green) |
-| Teal | `#2F8985` | `#061918` | ![Teal](https://placehold.co/120x120/061918/2F8985.png?text=Teal) |
-| Blue | `#2C5F9B` | `#081626` | ![Blue](https://placehold.co/120x120/081626/2C5F9B.png?text=Blue) |
-| Purple | `#6F5697` | `#261a3a` | ![Purple](https://placehold.co/120x120/261a3a/6F5697.png?text=Purple) |
-| Pink | `#B34A6D` | `#4c1829` | ![Pink](https://placehold.co/120x120/4c1829/B34A6D.png?text=Pink) |
+| Red | `#CF3B43` | `#601115` | ![Red](https://placehold.co/90x90/601115/CF3B43.png?text=Red) |
+| Orange | `#D7623B` | `#6b250e` | ![Orange](https://placehold.co/90x90/6b250e/D7623B.png?text=Orange) |
+| Yellow | `#E19642` | `#7e480c` | ![Yellow](https://placehold.co/90x90/7e480c/E19642.png?text=Yellow) |
+| Green | `#398060` | `#081811` | ![Green](https://placehold.co/90x90/081811/398060.png?text=Green) |
+| Teal | `#2F8985` | `#061918` | ![Teal](https://placehold.co/90x90/061918/2F8985.png?text=Teal) |
+| Blue | `#2C5F9B` | `#081626` | ![Blue](https://placehold.co/90x90/081626/2C5F9B.png?text=Blue) |
+| Purple | `#6F5697` | `#261a3a` | ![Purple](https://placehold.co/90x90/261a3a/6F5697.png?text=Purple) |
+| Pink | `#B34A6D` | `#4c1829` | ![Pink](https://placehold.co/90x90/4c1829/B34A6D.png?text=Pink) |
 
 ### Accessibility Notes
 
