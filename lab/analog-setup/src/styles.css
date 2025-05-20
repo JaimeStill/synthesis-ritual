@@ -1,0 +1,14 @@
+@import 'https://prismjs.catppuccin.com/latte.css' screen;
+@import 'https://prismjs.catppuccin.com/frappe.css' screen and (prefers-color-scheme: dark);
+
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100dvh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
