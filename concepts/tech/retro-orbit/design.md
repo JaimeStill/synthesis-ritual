@@ -57,9 +57,9 @@ A deep space-inspired dark theme with accent colors reminiscent of vintage NASA 
 
 | Color | Value | Preview |
 |-------|-------|---------|
-| Background | `#0A0E17` | ![Background](https://placehold.co/90x90/E6EDF3/0A0E17.png?text=Background) |
-| Surface | `#141A24` | ![Surface](https://placehold.co/90x90/E6EDF3/141A24.png?text=Surface) |
-| Overlay | `#1D2735` | ![Overlay](https://placehold.co/90x90/E6EDF3/1D2735.png?text=Overlay) |
+| Background | `#0A0E17` | ![Background](https://placehold.co/90x90/0A0E17/E6EDF3.png?text=Background) |
+| Surface | `#141A24` | ![Surface](https://placehold.co/90x90/141A24/E6EDF3.png?text=Surface) |
+| Overlay | `#1D2735` | ![Overlay](https://placehold.co/90x90/1D2735/E6EDF3.png?text=Overlay) |
 | Text | `#E6EDF3` | ![Text](https://placehold.co/90x90/0A0E17/E6EDF3.png?text=Text) |
 | Subtext | `#A0ABC0` | ![Subtext](https://placehold.co/90x90/0A0E17/A0ABC0.png?text=Subtext) |
 
@@ -126,9 +126,9 @@ A medium-dark theme inspired by the Apollo era space program with warm, slightly
 
 | Color | Value | Preview |
 |-------|-------|---------|
-| Background | `#1A1D21` | ![Background](https://placehold.co/90x90/E8E3DC/1A1D21.png?text=Background) |
-| Surface | `#25292E` | ![Surface](https://placehold.co/90x90/E8E3DC/25292E.png?text=Surface) |
-| Overlay | `#303540` | ![Overlay](https://placehold.co/90x90/E8E3DC/303540.png?text=Overlay) |
+| Background | `#1A1D21` | ![Background](https://placehold.co/90x90/1A1D21/E8E3DC.png?text=Background) |
+| Surface | `#25292E` | ![Surface](https://placehold.co/90x90/25292E/E8E3DC.png?text=Surface) |
+| Overlay | `#303540` | ![Overlay](https://placehold.co/90x90/303540/E8E3DC.png?text=Overlay) |
 | Text | `#E8E3DC` | ![Text](https://placehold.co/90x90/1A1D21/E8E3DC.png?text=Text) |
 | Subtext | `#B6AEA1` | ![Subtext](https://placehold.co/90x90/1A1D21/B6AEA1.png?text=Subtext) |
 
@@ -195,9 +195,9 @@ A medium-light theme with colors inspired by technical documents, blueprints, an
 
 | Color | Value | Preview |
 |-------|-------|---------|
-| Background | `#D5D8DB` | ![Background](https://placehold.co/90x90/242D3A/D5D8DB.png?text=Background) |
-| Surface | `#C5CAD3` | ![Surface](https://placehold.co/90x90/242D3A/C5CAD3.png?text=Surface) |
-| Overlay | `#B7BEC9` | ![Overlay](https://placehold.co/90x90/242D3A/B7BEC9.png?text=Overlay) |
+| Background | `#D5D8DB` | ![Background](https://placehold.co/90x90/D5D8DB/242D3A.png?text=Background) |
+| Surface | `#C5CAD3` | ![Surface](https://placehold.co/90x90/C5CAD3/242D3A.png?text=Surface) |
+| Overlay | `#B7BEC9` | ![Overlay](https://placehold.co/90x90/B7BEC9/242D3A.png?text=Overlay) |
 | Text | `#242D3A` | ![Text](https://placehold.co/90x90/D5D8DB/242D3A.png?text=Text) |
 | Subtext | `#536171` | ![Subtext](https://placehold.co/90x90/D5D8DB/536171.png?text=Subtext) |
 
@@ -265,9 +265,9 @@ A light theme inspired by Space Age optimism, retrofuturistic advertisements, an
 
 | Color | Value | Preview |
 |-------|-------|---------|
-| Background | `#EFF1F5` | ![Background](https://placehold.co/90x90/1C2430/EFF1F5.png?text=Background) |
-| Surface | `#E1E5ED` | ![Surface](https://placehold.co/90x90/1C2430/E1E5ED.png?text=Surface) |
-| Overlay | `#D1D7E3` | ![Overlay](https://placehold.co/90x90/1C2430/D1D7E3.png?text=Overlay) |
+| Background | `#EFF1F5` | ![Background](https://placehold.co/90x90/EFF1F5/1C2430.png?text=Background) |
+| Surface | `#E1E5ED` | ![Surface](https://placehold.co/90x90/E1E5ED/1C2430.png?text=Surface) |
+| Overlay | `#D1D7E3` | ![Overlay](https://placehold.co/90x90/D1D7E3/1C2430.png?text=Overlay) |
 | Text | `#1C2430` | ![Text](https://placehold.co/90x90/EFF1F5/1C2430.png?text=Text) |
 | Subtext | `#4C5A70` | ![Subtext](https://placehold.co/90x90/EFF1F5/4C5A70.png?text=Subtext) |
 
