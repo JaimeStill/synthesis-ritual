@@ -2,7 +2,7 @@
 
 This document analyzes the contents of the repository and provides recommendations for optimizations.
 
-## Prompt
+# Prompt
 
 Please analyze the contents of the `quantum-synthesis` directory and generate an artifact that details the following:
 

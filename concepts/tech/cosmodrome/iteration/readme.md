@@ -30,7 +30,7 @@ Additionally, provide a set of candidates for renaming the design system. While 
 
 Output the results into a new artifact that defines the design system specification in a clear and concise way.
 
-## Response
+# Response
 
 # Cosmodrome Design System
 
@@ -87,7 +87,7 @@ Your initial instincts were sound! The combination works exceptionally well for 
 
 The contrast values have been carefully calibrated to ensure optimal accessibility while maintaining the aesthetic. This condensed approach gives you a focused, cohesive system that remains true to the original vision.
 
-## Prompt
+# Prompt
 
 Cosmodrome is the perfect name, thank you! It also invokes nostalgia for a time when the video game series Destiny initially released, and brings me back to the great times that I had playing it.
 
@@ -100,7 +100,7 @@ In terms of feedback for the design system document, I would like to make the fo
 - Merge **Usage Guidelines** and **Implementation Guide** into a single section (they feel a bit redundant), and position them directly beneath the main theme sections.
   The **Theme Switching** section should be removed.
 
-## Response
+# Response
 
 I'll make those adjustments right away. The Destiny nostalgia is a nice bonus connection - Cosmodrome definitely has that retro-futuristic space exploration vibe that resonates with players from that era.
 

@@ -7,7 +7,7 @@ I really love the design philosophy behind the catppuccin color palette (see htt
 
 I would your assistance applying this concept to a different aesthetic. Whereas catppuccin is more aligned with a neon cyberpunk aesthetic, it would be great to have palettes that fit a retro futurism / NASA punk aesthetic.
 
-## Response
+# Response
 
 I'd be happy to help you create color palettes inspired by the catppuccin design philosophy but with a retro futurism/NASA punk aesthetic! Let me first look up the catppuccin design philosophy to understand its principles.
 
@@ -134,11 +134,11 @@ Each palette has:
 
 Would you like me to provide any specific implementation examples for your preferred technologies?
 
-## Prompt
+# Prompt
 
 Can you generate a pure HTML / CSS palette page for each flavor, using the RetroOrbit aesthetic?
 
-## Response
+# Response
 
 I'll create HTML/CSS palette pages for each RetroOrbit flavor with a space-themed design that matches the retro futurism / NASA punk aesthetic. Each page will showcase the colors and provide a visual feel for how they work together.
 

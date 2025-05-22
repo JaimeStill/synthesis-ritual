@@ -16,7 +16,7 @@ I want the project structure to characterize the nature of a blending of sci-fi,
 
 This structure will probably evolve over time, but this is a good starting structure to get things going.
 
-## Response
+# Response
 
 I'll help you establish a themed folder structure for the `synthesis-ritual` repository that captures the blending of sci-fi, technology, and ritual mysticism. The goal is to create stylized names that reflect the evolving nature of ideas within this conceptual framework.
 
@@ -59,11 +59,11 @@ The subfolder names follow similar thematics, blending technological terminology
 
 Would you like me to suggest any adjustments to better align with your vision, or would you like alternative names for any of these folders?
 
-## Prompt
+# Prompt
 
 This is a good starting point, but I would like to refine the nomenclature a bit more. Let us start with the term `wellspring`. I would like to keep the words short and simple. The inspiration from the underlying theme should be very subtle.
 
-## Response
+# Response
 
 You're right about keeping words simple and the thematic inspiration subtle. Let's refine the nomenclature with shorter, more straightforward terms while maintaining that subtle blend of tech and mysticism:
 
@@ -101,7 +101,7 @@ The subfolder structure is also simplified but maintains the organizational logi
 
 Does this align better with your vision for a more subtle approach?
 
-## Prompt
+# Prompt
 
 I have the following structure formalized so far:
 
@@ -111,7 +111,7 @@ I have the following structure formalized so far:
 
 Now I would like to develop a better term for `publication` that refers to it as the finalized form of a developed work.
 
-## Response
+# Response
 
 For the finalized form of developed work, here are some simple yet subtly thematic alternatives to "publication":
 
@@ -135,11 +135,11 @@ synthesis-ritual/
 
 Which of these resonates most with your vision for the repository structure?
 
-## Prompt
+# Prompt
 
 I still don't feel like the term necessarily fits. What would be a good term that alludes to an archive of important data, a collection of powerful tomes, a suite of powerful tools... this is primarily the point of this *publication* directory.
 
-## Response
+# Response
 
 I see what you're looking for - a term that evokes an archive or collection of powerful, refined works. Here are some better options that align with that concept:
 
@@ -164,7 +164,7 @@ synthesis-ritual/
 
 The term "vault" is simple yet evokes both technological security and a repository of valuable items, while "codex" subtly references ancient collections of important knowledge while remaining technically relevant.
 
-## Prompt
+# Prompt
 
 I like `codex` more, as `vault` indicates more that it is locked away and inaccessible. We will go with that:
 
@@ -173,7 +173,7 @@ I like `codex` more, as `vault` indicates more that it is locked away and inacce
 - `lab`
 - `codex`
 
-## Response
+# Response
 
 Excellent choice! "Codex" perfectly captures the idea of an accessible collection of significant knowledge and works, while still maintaining that subtle blend of technical and mystical elements.
 

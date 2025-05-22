@@ -1,6 +1,6 @@
 # Hybrid SQL / C# Language
 
-> LLM: Claude 3.7 Sonnet  
+> LLM: Claude 3.7 Sonnet\
 > Date: 2025-03-20
 
 I would like your assistance creating a hybrid, functional, dynamic SQL-like language that combines with C#. Inspiration for this language is a combination of the following:
@@ -16,7 +16,7 @@ The language should not be overly complicated. It should merely focus on extendi
 
 The output of this file should be able to be fed into a raw Microsoft.Data.SqlClient connection for execution. The basic functionality of the language would be to condition the query, output the resulting query at the moment execution is requested, then hand off control flow to the .NET program leveraging it.
 
-## Response
+# Response
 
 I'll help you design this hybrid language. Let's create a specification and some example implementations.
 
@@ -39,7 +39,7 @@ Would you like me to elaborate on any specific aspect of the language design? I 
 
 Let me know what interests you most and I'll provide more detailed examples in that direction.
 
-## Prompt
+# Prompt
 
 Some additional thoughts:
 
@@ -47,7 +47,7 @@ Some additional thoughts:
 
 - along with the flavor of SQL, the decorator header should also support specifying either a raw connection string, or a connection string configuration key.
 
-## Response
+# Response
 
 Excellent suggestions! This makes the language feel more native to C# and follows better dependency injection patterns. Let me revise the specification.
 
@@ -68,6 +68,7 @@ The key improvements are:
 5. Better integration with existing .NET patterns
 
 Would you like me to:
+
 1. Create an example of the compiler implementation?
 2. Show more complex query patterns?
 3. Demonstrate integration with specific ORMs?

@@ -2,11 +2,12 @@
 
 This document analyzes the contents of the concept and provides a thematic overview of the primary details.
 
-## Prompt
+# Prompt
 
 Please analyze the `quantum-synthesis` directory and generate an artifact that is a thematic overview of the primary details.
 
 This should be a high-level overview of the primary details, not:
+
 - an analysis of the content and how it can be improved
 - character reference details
 - a glossary of terms

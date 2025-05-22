@@ -1,11 +1,12 @@
 # Systematic Processing Test - Alone Among the Stars
 
-> LLM: Claude 3.5 Sonnet  
+> LLM: Claude 3.5 Sonnet\
 > Date: 2025-01-22
 
 The log that follows is my first attempt at working through the game sequence for the table top RPG [Alone Among the Stars](https://noroadhome.itch.io/alone-among-the-stars) with the Claude 3.5 Sonnet LLM.
 
-## Prompt
+# Prompt
+
 **Instructions**
 
 I would like to test your ability to provide deterministically formatted responses by having you play a simple solo tabletop RPG. What follows is a summary, as well as a reference to the rules.
@@ -73,7 +74,8 @@ Please respond with a JSON object in the following format:
 title: string - the name of your adventure
 year: number - represents the year of travel
 
-## Response
+# Response
+
 ```json
 {
   "title": "Stellar Chronicles: A Solo Voyager's Tale",
@@ -82,15 +84,18 @@ year: number - represents the year of travel
 }​​​​​​​​​​​​​​​​
 ```
 
-## Prompt
+# Prompt
+
 Perform your first planetary discovery roll, in the format that follows:
+
 - name: string - the name of the planet you have discovered.
 - roll: number - result of a 6-sided die roll
-- cards: Card[] - the subsequent event cards for this planet’s exploration. Card has the following schema:
-    - suit: string - the suit of the card that was drawn.
-    - rank: string - the rank of the card that was drawn.
+- cards: Card\[] - the subsequent event cards for this planet’s exploration. Card has the following schema:
+  - suit: string - the suit of the card that was drawn.
+  - rank: string - the rank of the card that was drawn.
 
-## Response
+# Response
+
 ```json
 {
   "name": "Heliosite-7",
@@ -117,8 +122,10 @@ Perform your first planetary discovery roll, in the format that follows:
 }​​​​​​​​​​​​​​​​
 ```
 
-## Prompt
+# Prompt
+
 Make a discovery roll and provide a ship log entry for the corresponding discovery card in the following format:
+
 - date: Date - the date of the log entry
 - title: string - a title for the log entry
 - log: string - the ship log body
@@ -126,6 +133,7 @@ Make a discovery roll and provide a ship log entry for the corresponding discove
 - card: Card - the card corresponding to the log entry value
 
 ## Result
+
 ```json
 {
   "date": "2457-03-15",
@@ -140,10 +148,12 @@ Make a discovery roll and provide a ship log entry for the corresponding discove
 }​​​​​​​​​​​​​​​​
 ```
 
-## Prompt
+# Prompt
+
 Please respond with your next discovery turn.
 
-## Response
+# Response
+
 ```json
 {
   "date": "2457-03-17",
@@ -158,10 +168,12 @@ Please respond with your next discovery turn.
 }​​​​​​​​​​​​​​​​
 ```
 
-## Prompt
+# Prompt
+
 Please respond with your next discovery turn.
 
-## Response
+# Response
+
 ```json
 {
   "date": "2457-03-18",
@@ -176,10 +188,12 @@ Please respond with your next discovery turn.
 }​​​​​​​​​​​​​​​​
 ```
 
-## Prompt
+# Prompt
+
 Please respond with your final discovery turn.
 
-## Response
+# Response
+
 ```json
 {
   "date": "2457-03-19",

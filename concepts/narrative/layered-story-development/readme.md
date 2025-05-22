@@ -1,6 +1,6 @@
 # Layered Story Development
 
-> LLM: Claude 3.7 Sonnet  
+> LLM: Claude 3.7 Sonnet\
 > Date: 2025-05-06
 
 I want to use a project in Claude to develop a story that I have in my mind. I'm trying to understand how I can layer different aspects of the story development within the project. These aspects are things such as:
@@ -11,7 +11,7 @@ I want to use a project in Claude to develop a story that I have in my mind. I'm
 
 All of these aspects of the story should be able to be isolated and developed individually, but holistically considered when writing prompts so that everything remains consistent.
 
-## Response
+# Response
 
 I understand you're looking to develop a comprehensive story project with various interconnected aspects. This is a great approach for complex storytelling, especially for narratives with science fiction elements like neural interfaces and augmented reality.
 
@@ -20,6 +20,7 @@ Let me suggest a structured way to organize your story development project using
 ## A Project Structure for Story Development
 
 I can help you create a system where you can:
+
 1. Develop individual elements (characters, technology, world-building)
 2. Track narrative events on a timeline
 3. Explore literary devices and concepts

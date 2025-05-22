@@ -5,7 +5,7 @@
 
 As a professional C# developer, I would like help initializing a Go project intended as a starting point for building a CLI tool. Please use the latest, most native features possible.
 
-## Response
+# Response
 
 As a C# developer venturing into Go for CLI development, you'll find some similarities in structured programming while enjoying Go's simplicity. Let me help you set up a modern Go CLI project using the latest features.
 
@@ -30,20 +30,20 @@ go get github.com/spf13/viper
 
 #### 2. Key Features of this Project Structure
 
-* **Modern Go Module System**: Uses Go modules for dependency management
-* **Cobra & Viper**: Industry-standard libraries for building CLI apps (similar to System.CommandLine in .NET)
-* **Clean Architecture**:
-  * `cmd/`: Contains command definitions
-  * `internal/`: Private application code
-  * `pkg/`: Potentially reusable code
-  * `main.go`: Minimal entry point
+- **Modern Go Module System**: Uses Go modules for dependency management
+- **Cobra & Viper**: Industry-standard libraries for building CLI apps (similar to System.CommandLine in .NET)
+- **Clean Architecture**:
+  - `cmd/`: Contains command definitions
+  - `internal/`: Private application code
+  - `pkg/`: Potentially reusable code
+  - `main.go`: Minimal entry point
 
 #### 3. Notable Go Features Used
 
-* **Error Handling**: Idiomatic Go error propagation
-* **Package Organization**: Following standard Go project layout
-* **Flag Parsing**: Using Cobra's flag system (similar to argument parsing in C#)
-* **Configuration Management**: Using Viper for config files and environment variables
+- **Error Handling**: Idiomatic Go error propagation
+- **Package Organization**: Following standard Go project layout
+- **Flag Parsing**: Using Cobra's flag system (similar to argument parsing in C#)
+- **Configuration Management**: Using Viper for config files and environment variables
 
 #### 4. Build and Run
 
@@ -61,21 +61,21 @@ go build -o my-cli
 
 To extend this CLI, you can:
 
-* Add more subcommands in the `cmd` package
-* Implement business logic in the `internal` package
-* Define shared utilities in the `pkg` package
+- Add more subcommands in the `cmd` package
+- Implement business logic in the `internal` package
+- Define shared utilities in the `pkg` package
 
 Let me know if you'd like to focus on any specific aspect of Go CLI development, or if you want to adapt this for a particular use case!
 
-## Prompt
+# Prompt
 
 Please create an artifact that serves as a cheat sheet for the concepts I’ll need to know in Go as a C# developer. Particularly:
 
-* core data structures
-* patterns for constructing object hierarchies
-* parallel / asynchronous programming and go routines
+- core data structures
+- patterns for constructing object hierarchies
+- parallel / asynchronous programming and go routines
 
-## Response
+# Response
 
 I've created a comprehensive [Go cheat sheet](./cheat-sheet.md) tailored specifically for you as a C# developer. The cheat sheet covers all the requested areas with direct comparisons to C# concepts you're already familiar with.
 
@@ -83,33 +83,33 @@ A few highlights from the cheat sheet:
 
 **Core Data Structures**
 
-* Go slices (`[]Type`) are similar to C#'s `List<T>` but with some important differences
-* Maps (`map[KeyType]ValueType`) replace C# dictionaries
-* Structs in Go serve as the foundation for "classes"
+- Go slices (`[]Type`) are similar to C#'s `List<T>` but with some important differences
+- Maps (`map[KeyType]ValueType`) replace C# dictionaries
+- Structs in Go serve as the foundation for "classes"
 
 **Object Hierarchies**
 
-* Go uses composition rather than inheritance
-* The factory function pattern replaces constructors
-* Method receivers (both value and pointer) provide behavior
-* Interfaces are implicitly implemented
+- Go uses composition rather than inheritance
+- The factory function pattern replaces constructors
+- Method receivers (both value and pointer) provide behavior
+- Interfaces are implicitly implemented
 
 **Concurrency**
 
-* Goroutines are lightweight compared to Tasks/TPL
-* Channels provide the primary communication mechanism
-* The `sync` package offers mutex, wait groups, and more
-* Context for cancellation patterns
+- Goroutines are lightweight compared to Tasks/TPL
+- Channels provide the primary communication mechanism
+- The `sync` package offers mutex, wait groups, and more
+- Context for cancellation patterns
 
 What's particularly interesting for you as a C# developer is that Go approaches many problems with a different philosophy. While C# has been adding more functional features over time, Go has maintained its simplicity with a focus on composition and explicit behavior.
 
 Is there any specific aspect of the cheat sheet you'd like me to elaborate on further?
 
-## Prompt
+# Prompt
 
 Can you modify the artifact to include a section describing how to think around using pointers and references vs passing by value?
 
-## Response
+# Response
 
 I'll add a section on pointers, references, and value semantics to help clarify these concepts for C# developers.
 
@@ -120,8 +120,8 @@ I've updated the cheat sheet with a comprehensive section on pointers and value 
 2. **Pointers in Go** - Basic syntax and operations with practical examples
 
 3. **When to Use Pointers vs Values** - Clear guidelines for both approaches:
-   * Use pointers for modifying values, large structs, optional values, and interface implementations
-   * Use values for small types, immutability, and types that are already reference-like
+   - Use pointers for modifying values, large structs, optional values, and interface implementations
+   - Use values for small types, immutability, and types that are already reference-like
 
 4. **Go vs C# Mental Model** - How to adjust your thinking when switching between languages
 
@@ -135,11 +135,11 @@ This should help you build a mental model of how memory and references work in G
 
 Is there anything specific about pointers or value semantics you'd like me to expand on further?
 
-## Prompt
+# Prompt
 
 Please optimize the order of the section in the cheat sheet and it will be perfect. Thank you!
 
-## Response
+# Response
 
 I'll optimize the order of sections in the cheat sheet to create a more logical progression from basic to advanced concepts.
 
@@ -156,11 +156,11 @@ This ordering creates a more natural flow from basic concepts to advanced ones a
 
 The cheat sheet should now be ready for you to use as a reference during your Go development journey!
 
-## Prompt
+# Prompt
 
 Can you generate an artifact that serves as a quick reference to the go std library?
 
-## Response
+# Response
 
 I've created a comprehensive [quick reference guide](./std-lib-ref.md) to the Go standard library. This artifact is designed to help you find the most commonly used packages and functions quickly as you transition from C# to Go.
 
@@ -183,11 +183,11 @@ The reference concludes with some key tips for transitioning from C# to Go, emph
 
 Is there any specific area of the standard library you'd like me to expand on further?
 
-## Prompt
+# Prompt
 
 Does the CLI project support autocompletion in the terminal? If not, how is this accomplished?
 
-## Response
+# Response
 
 The CLI project I shared initially doesn't have autocompletion enabled, but the Cobra library we're using makes it easy to add this functionality. Let me explain how to implement it:
 
