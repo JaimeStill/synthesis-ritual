@@ -1,4 +1,3 @@
-# The Loop
 
 ## Day 1 - 14:30
 **Dr. Rebecca Thornton - Lead Researcher**
@@ -36,8 +35,6 @@ The equation appears on the screen—a maze of tensor calculus that would have b
 I work through the calculation aloud, the AI helping me navigate the complex mathematical landscape while my human intuition grasps the physical reality behind the abstractions. The black hole becomes real in my mind—a spinning monster warping the very fabric of reality around itself.
 
 "It's like having Einstein himself guiding my thoughts," I tell her. "Every step makes perfect sense, but I'm also seeing connections he never explored. This collaboration between human insight and artificial precision... this is the future."
-
-This kind of collaboration between human and artificial intelligence... this is the future.
 
 ## Day 1 - 15:35
 **Jeff Morrison - Subject 3**
